@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CrossTennisV2</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+  <div class="flex bg-blue-50">
+        <div class="font-bold text-gray-900 text-5xl ">
+            Cross Tennis
+        </div>
+        <div class="flex text-gray-900 text-xl ml-96 space-x-12">
+            <a href="/">Accueil</a>
+            <a href="/about">A propos</a>
+            <a href="/planning">Planning</a>
+            <a class="text-red-300" href="profil">Votre Profil</a>
+            <a href="contact">Contact</a>
+        </div>
+  </div>
+    <%= yield %>
+  </body>
+</html>
